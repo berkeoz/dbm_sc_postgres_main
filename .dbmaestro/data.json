@@ -1,4 +1,31 @@
 {
-  "Projects": [],
+  "Projects": [
+    {
+      "GlobalData": {
+        "ProjectId": "0e2d616c-58d6-421a-9ba1-0d0571d43583",
+        "ProjectName": "postgres_test",
+        "DBTypeName": "PostgreSQL",
+        "Environments": null,
+        "SourceControlPathType": 0,
+        "Configuration": {
+          "BuildMigrationScriptAutomatically": true,
+          "DBConfiguration": {},
+          "NumberOfRevisionsInViewHistory": 10,
+          "NumberOfTagsInBuildOptions": 10,
+          "PreventCommitObjectWithConflict": false,
+          "UseCache": null
+        },
+        "ProjectArchitecture": 1,
+        "LocalDirectory": ""
+      },
+      "UserData": [
+        {
+          "UserName": "berkeoz",
+          "DatabasesData": []
+        }
+      ],
+      "DatabasesStaticDataObjects": null
+    }
+  ],
   "GlobalConfigurations": null
 }
