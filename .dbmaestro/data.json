@@ -85,7 +85,26 @@
         "ProjectId": "a712ec57-cf19-4fb0-9d94-23ab4172d5da",
         "ProjectName": "postgres_test_sb",
         "DBTypeName": "PostgreSQL",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "76c801f2-709c-4e45-99cd-fa7d27e6e9e8",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "b3e004b9-11e9-4051-8e64-b0e50a2b30cf",
+                "DatabaseAliasName": "postgres_sb_db1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/berkeoz/dbm_sc_postgres_sb_db1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -101,7 +120,30 @@
       "UserData": [
         {
           "UserName": "berkeoz",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "b3e004b9-11e9-4051-8e64-b0e50a2b30cf",
+              "DatabaseAliasName": "postgres_sb_db1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "PostgreSQL",
+                    "host": "localhost",
+                    "port": "5432",
+                    "userName": "postgres",
+                    "dbName": "dbm_sc_sb_db1",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "berkeoz",
+                "Password": "OwpWlkWmltynchlAGzUVJhagkl4gbzNshplobMMz7PjSNDNYC+pPI+/W6mO5R+Lj"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null
