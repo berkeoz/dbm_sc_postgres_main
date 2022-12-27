@@ -5,7 +5,26 @@
         "ProjectId": "0e2d616c-58d6-421a-9ba1-0d0571d43583",
         "ProjectName": "postgres_test",
         "DBTypeName": "PostgreSQL",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "4bbd924f-51af-4bcc-be4e-5ef45aa55917",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "ca2235f1-d90b-4144-820a-bf1943d520d7",
+                "DatabaseAliasName": "postgres_sh_db1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/berkeoz/dbm_sc_postgres_sh_db1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +40,42 @@
       "UserData": [
         {
           "UserName": "berkeoz",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "ca2235f1-d90b-4144-820a-bf1943d520d7",
+              "DatabaseAliasName": "postgres_sh_db1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": null,
+              "RepositoryCredentials": {
+                "UserName": "berkeoz",
+                "Password": "OwpWlkWmltynchlAGzUVJhagkl4gbzNshplobMMz7PjSNDNYC+pPI+/W6mO5R+Lj"
+              }
+            }
+          ]
+        },
+        {
+          "UserName": "#ALL",
+          "DatabasesData": [
+            {
+              "DatabaseId": "ca2235f1-d90b-4144-820a-bf1943d520d7",
+              "DatabaseAliasName": "postgres_sh_db1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "PostgreSQL",
+                    "host": "localhost",
+                    "port": "5432",
+                    "userName": "postgres",
+                    "dbName": "dbm_sc_sh_db1",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": null
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null
